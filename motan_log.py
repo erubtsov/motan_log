@@ -94,8 +94,7 @@ def main():
 
     # Default graphs to draw
     graph_descs = [
-        "status(heater_bed.temperature)?color=green",
-        "status(extruder.temperature)?color=blue",
+        "status(hall_filament_width_sensor.Diameter)?color=green",
     ]
     if options.graph is not None:
         graph_descs = ast.literal_eval(options.graph)
